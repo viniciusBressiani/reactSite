@@ -23,7 +23,7 @@ const Metas = () => {
       }}
     >
       <Box>
-        <img width="80%" src={copos} alt="Copos de Cerveja" />
+        <img width="70%" src={copos} alt="Copos de Cerveja" />
       </Box>
       <Box>
         <Typography variant='h2'
@@ -42,8 +42,8 @@ const Metas = () => {
             }
           }}>
           {
-            metas.map((meta) => {
-              return <li>{meta}</li>
+            metas.map((meta, index) => {
+              return <li key={index}>{meta}</li>
             })
           }
 

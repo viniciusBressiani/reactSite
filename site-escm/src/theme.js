@@ -29,22 +29,26 @@ export const theme = createTheme({
         h3: {
             fontFamily: [ 'Krona One', "sans-serif"].join(","),
             fontSize: "3rem",
-            color: "#e84e1b"
+            
         },
         h4: {
             fontFamily: [ 'Krona One', "sans-serif"].join(","),
             fontSize: "2.5rem",
-            color: "#e84e1b"
+            
         },
         h5: {
             fontFamily: [ 'Krona One', "sans-serif"].join(","),
             fontSize: "2rem",
-            color: "#e84e1b"
+            
         },
         h6: {
             fontFamily: [ 'Krona One', "sans-serif"].join(","),
             fontSize: "1.5rem",
-            color: "#e84e1b"
+            
         },
+        body1: {
+            fontSize: "2.5rem",
+        
+        }
     }
 })
