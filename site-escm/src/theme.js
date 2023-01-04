@@ -10,8 +10,41 @@ export const theme = createTheme({
         background: "#f7eeda", /* light cream */
     },
     btn: {
-        g: 'padding: "1rem 2rem"' 
-            
-        
+        g: 'padding: "1rem 2rem"'    
+    },
+    typography : {
+        htmlFontSize: 10,
+        fontFamily: ['Krona One', "sans-serif"].join(","),
+        fontSize: "1.2rem",
+        h1: {
+            fontFamily: [ 'Krona One', "sans-serif"].join(","),
+            fontSize: "6rem",
+            color: "#e84e1b",
+        },
+        h2: {
+            fontFamily: [ 'Krona One', "sans-serif"].join(","),
+            fontSize: "4rem",
+            color: "#e84e1b"
+        },
+        h3: {
+            fontFamily: [ 'Krona One', "sans-serif"].join(","),
+            fontSize: "3rem",
+            color: "#e84e1b"
+        },
+        h4: {
+            fontFamily: [ 'Krona One', "sans-serif"].join(","),
+            fontSize: "2.5rem",
+            color: "#e84e1b"
+        },
+        h5: {
+            fontFamily: [ 'Krona One', "sans-serif"].join(","),
+            fontSize: "2rem",
+            color: "#e84e1b"
+        },
+        h6: {
+            fontFamily: [ 'Krona One', "sans-serif"].join(","),
+            fontSize: "1.5rem",
+            color: "#e84e1b"
+        },
     }
 })

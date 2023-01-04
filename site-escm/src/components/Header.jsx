@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, useTheme } from '@mui/material';
+import { Box, Typography, useTheme } from '@mui/material';
 import Button from './Button';
 
 const Header = () => {
@@ -29,9 +29,6 @@ const Header = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
-            "h1":{
-              fontSize: "6rem"
-            },
             "span":{
               color: theme.palette.accent
             },
@@ -41,7 +38,7 @@ const Header = () => {
             }
           }}
         >
-          <h1><span>Curso Online</span> Cervejeiro Caseiro</h1>
+          <Typography variant='h1'><span>Curso Online</span> Cervejeiro Caseiro</Typography>
           <p>O melhor conteúdo para você produzir a melhor cerveja.</p>
           <Button text="inscreva-se agora" color="accent" size="g"/>
         </Box>
@@ -58,9 +55,9 @@ const Header = () => {
 						height="350"
 						src="https://www.youtube.com/embed/rtQySS1Q2-Y"
 						title="YouTube video player"
-						frameborder="0"
+						frameBorder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
+						allowFullScreen
 					></iframe>
         </Box>
       </Box>
