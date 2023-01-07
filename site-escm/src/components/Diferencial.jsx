@@ -8,7 +8,7 @@ const Diferencial = ({title, description, icon}) => {
         textAlign: "center",
     }}>
         <img width="50%" src={icon} alt="" />
-        <Typography variant='h3' height="8rem" marginTop="2rem">{title}</Typography>
+        <Typography variant='h3' height="8rem" margin="2rem auto">{title}</Typography>
         <Typography variant='body1' fontWeight="400" >{description}</Typography>
     </Box>
   )

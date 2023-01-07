@@ -35,7 +35,7 @@ const Diferenciais = () => {
            {
             diferenciais.CCO.map((diferencial, index)=> {
               return (
-              <Diferencial title={diferencial.title} description={diferencial.description} icon={diferencial.icon} />
+              <Diferencial key={index} title={diferencial.title} description={diferencial.description} icon={diferencial.icon} />
                 )
             })
            }
