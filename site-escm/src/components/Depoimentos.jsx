@@ -2,6 +2,8 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import Depoimento from './Depoimento';
 import charles from 'assets/alunos/charles_da_silva.webp';
+import henrique from 'assets/alunos/cervejeiro_caseiro/Henrique_Saur_Lopes.webp';
+import edmilson from 'assets/alunos/cervejeiro_caseiro/Edmilson_Schmitz.webp';
 
 const dataDepoimentos = [
   { 
@@ -14,13 +16,13 @@ const dataDepoimentos = [
     text: " Curso foi maravilhoso. Superou todas as expectativas. Professores e material de ensino super qualificado e a estrutura da escola, mesmo sendo um curso on-line foi fantástico. Espero em breve realizar mais cursos. ",
     title: "Cervejeiro Caseiro",
     name: "HENRIQUE SAUR LOPES",
-    image: charles
+    image: henrique
 },
   { 
     text: " O Curso Cervejeiro Caseiro superou as minhas expectativas. Por ser on-line, tinha receio de que ficaria limitado à teoria, mas não. Os recursos disponibilizados e principalmente a didática dos professores conseguiram tornar as aulas muito produtivas e objetivas.  ",
     title: "Cervejeiro Caseiro",
     name: "EDMILSON SCHMITZ",
-    image: charles
+    image: edmilson
 },
 ]
 
@@ -34,8 +36,9 @@ const Depoimentos = () => {
         <Typography variant='h2' margin='2rem auto' textAlign='center'>O que nossos alunos dizem:</Typography>
        
          {
-          dataDepoimentos.map(({title, text, image, name}) => {
+          dataDepoimentos.map(({title, text, image, name}, index) => {
             return <Box
+            key={index}
             sx={{
              margin: "4rem auto"
             }}>
